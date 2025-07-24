@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Novia Sofi</title>
+  <style>
+    body {
+      background-color: #ffd6e7;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: #4a004a;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #d63384;
+      margin-bottom: 5px;
+    }
+    h2 {
+      color: #99004d;
+      margin-bottom: 30px;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .foto-container {
+      width: 200px;
+    }
+    .foto {
+      border-radius: 20px;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .foto:hover {
+      transform: scale(1.05);
+    }
+    .descripcion {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #660033;
+    }
+    .mensaje {
+      background-color: #fff0f7;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 15px;
+      font-size: 18px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #extra {
+      margin-top: 20px;
+      font-size: 18px;
+      display: none;
+      color: #99004d;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Mi Novia Sofi 💖</h1>
+  <h2>Mi princesita hermosa</h2>
+
+  <div class="galeria">
+    <div class="foto-container">
+      <img class="foto" src="foto7.jpeg" alt="Sofi de pequeña">
+      <p class="descripcion">Sofi de pequeña 💗</p>
+    </div>
+
+    <div class="foto-container">
+      <img class="foto" src="foto12.jpeg" alt="Sofi con sus florecitas">
+      <p class="descripcion">Sofi con sus florecitas🌸</p>
+    </div>
+
+    <div class="foto-container">
+      <img class="foto" src="foto5.jpeg" alt="Sofi con nuestro hijito">
+      <p class="descripcion">Sofi con nuestro hijito </p>
+    </div>
+
+    <div class="foto-container">
+      <img class="foto" src="foto1.jpeg" alt="Sofi en su U">
+      <p class="descripcion">La fisio más hermosa 🎓</p>
+    </div>
+
+    <div class="foto-container">
+      <img class="foto" src="foto11.jpeg" alt="Mi foto fav">
+      <p class="descripcion">Mi foto favorita, simplemente tú 💘</p>
+    </div>
+  </div>
+
+  <div class="mensaje">
+    <p>
+      Mi princesa, desde que llegaste a mi vida, todo es más bonito. Tu sonrisa, tu ternura y tu forma de demostrarme todo tu amor me inspiran cada día. 
+      Eres una mujer increíble, fuerte, amorosa, y con una luz única que ilumina cada momento a tu lado. 
+      Me siento el hombre más afortunado por tenerte, por reír contigo, por crecer contigo, y por imaginar un futuro donde estemos siempre juntos. 
+      Gracias por ser tú, por tu amor y por hacerme sentir tan amado. Te amo con todo mi corazón, hoy y siempre 💘
+    </p>
+  </div>
+
+  <button onclick="alternarMensaje()" id="botonMensaje">Haz clic Amorcito 💌</button>
+  <p id="extra">Te amooooooo te amooooooo te amooooooo muchisisisisimoooooooo 💞</p>
+
+  <footer>
+    Página hecha con amor por Andrés 💘
+  </footer>
+
+  <script>
+    function alternarMensaje() {
+      const mensaje = document.getElementById('extra');
+      const boton = document.getElementById('botonMensaje');
+
+      if (mensaje.style.display === 'none' || mensaje.style.display === '') {
+        mensaje.style.display = 'block';
+        boton.textContent = 'Ocultar mensaje 💌';
+      } else {
+        mensaje.style.display = 'none';
+        boton.textContent = 'Haz clic Sofi 💌';
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
